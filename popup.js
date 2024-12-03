@@ -1,15 +1,3 @@
-chrome.aiOriginTrial.languageModel.capabilities()
-  .then(capabilities => {
-    if (capabilities.available === 'no') {
-      console.warn("The model cannot be used on this browser.");
-    } else if (capabilities.available === 'after-download') {
-      console.log("Model download required.");
-    } else {
-      console.log("Model is ready to use.");
-    }
-  })
-  .catch(error => console.error("Error checking model capabilities:", error));
-
 
 // Fetch verses and hadiths
 const fetchJSON = async (url) => {
