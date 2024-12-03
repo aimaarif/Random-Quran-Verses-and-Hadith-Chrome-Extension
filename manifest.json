@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Random Quran Verse",
+  "version": "1.0",
+  "description": "Displays a random Quranic verse when clicked.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "Quran.png",
+      "48": "Quran.png",
+      "128": "Quran.png"
+    }
+  },
+  "icons": {
+    "16": "Quran.png",
+    "48": "Quran.png",
+    "128": "Quran.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://example.com/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["processed_dataset.json", "processed_hadiths.json"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
